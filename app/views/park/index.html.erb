@@ -1,0 +1,35 @@
+<h1>停車場</h1>
+
+<h3>停車場收費標準</h3>
+<table class="table">
+  <thead>
+    <tr>
+      <td>車輛類型</td>
+      <td>收費標準</td>
+      <td>其他收費說明</td>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>motocycle</td>
+      <td>$20/1天</td>
+      <td>無</td>
+    </tr>
+
+    <tr>
+      <td>car</td>
+      <td>前 2 個小時，$40/1小時；超過 2 小時之後$30/1小時。</td>
+      <td>未滿1小時以1小時計費。每天最高上限為 500 元。</td>
+    </tr>
+
+    <tr>
+      <td></td>
+      <td></td>
+      <td>
+        <%= link_to "試算總停車費用", new_park_path, class:"btn btn-danger
+        btn-m" %>
+      </td>
+    </tr>
+  </tbody>
+</table>

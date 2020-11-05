@@ -1,0 +1,65 @@
+<h1>停車場</h1>
+
+<h3>停車費試算</h3>
+<table class="table">
+  <thead>
+    <tr>
+      <td>車輛類型</td>
+      <td>停車時數</td>
+      <td>試算查詢</td>
+      <td>總收費金額</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <select name="city_id" id="city_id">
+          <option value="1">Motocycle</option>
+          <option value="2">Car</option>
+        </select>
+      </td>
+
+      <td>
+        <select name="city_id" id="city_id">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
+          <option value="19">19</option>
+          <option value="20">20</option>
+          <option value="21">21</option>
+          <option value="22">22</option>
+          <option value="23">23</option>
+          <option value="24">24</option>
+        </select>
+      </td>
+
+      <td><button class='btn'>查詢</button></td>
+
+      <td><%= @fee %>元</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>
+        <%= link_to "停車場收費標準", park_index_path, class:"btn btn-danger
+        btn-m" %>
+      </td>
+    </tr>
+  </tbody>
+</table>
